@@ -10,7 +10,7 @@ import { HttpErrorResponse } from '@angular/common/http';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'BookStore';
+  title = 'BookManagement';
   public books: Book[] | undefined;
 
   constructor(private router: Router, private bookService: BookService) {

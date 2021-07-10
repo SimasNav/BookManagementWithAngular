@@ -8,7 +8,7 @@ const routes: Routes = [
   {path: 'books', component: BookListComponent},
   {path: 'create-book', component: CreateBookComponent},
   {path: 'update-book/:id', component: UpdateBookComponent},
-  {path: '', redirectTo : "books", pathMatch : 'full'}
+  {path: '', redirectTo : 'books', pathMatch : 'full'}
 ];
 
 @NgModule({
