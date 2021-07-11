@@ -1,23 +1,24 @@
-
 <div class="container">
   <h2>Book List</h2>
-<table class="table table-hover">
+  <table class="table table-hover">
     <thead>
-        <tr>
-            <th>Title</th>
-            <th>Pages</th>
-            <th>Price</th>
-            <th>Actions</th>
-        </tr>
+    <tr>
+      <th>Title</th>
+      <th>Pages</th>
+      <th>Price</th>
+      <th>Actions</th>
+    </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let book of books">
-            <td>{{ book.title }}</td>
-            <td>{{ book.pages }}</td>
-            <td>{{ book.price }}</td>
-            <td>
-                <button (click)="updateBook(book.id)" class="btn btn-info">Update</button></td>
-        </tr>
+    <tr *ngFor="let book of books">
+      <td>{{ book.title }}</td>
+      <td>{{ book.pages }}</td>
+      <td>{{ book.price }}</td>
+      <td>
+        <button (click)="updateBook(book.id)" class="btn btn-info button-spacing">Update</button>
+        <button (click)="deleteBook(book.id)" class="btn btn-danger button-spacing">Delete</button>
+      </td>
+    </tr>
     </tbody>
-</table>
+  </table>
 </div>

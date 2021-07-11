@@ -1,11 +1,11 @@
-// @import "~bootstrap/dist/css/bootstrap.min.css";
+
 
 body {
   font-family: 'Encode Sans SC', sans-serif;
 }
 
 .footer {
-  position: absolute;
+  margin-top: 10px;
   padding-top: 10px;
   bottom: 0;
   width: 100%;
@@ -17,4 +17,8 @@ body {
 
 .title {
     text-align: center;
+}
+
+.button-spacing {
+  margin-right: 10px;
 }
