@@ -28,4 +28,12 @@ books: Book[] | undefined;
     this.router.navigate(['update-book',id]);
   }
 
+  deleteBook(id: number | undefined) {
+    // @ts-ignore
+    this.bookService.deleteBook(id).subscribe(data => {
+      console.log(data);
+      this.getBooks();
+    });
+  }
+
 }
