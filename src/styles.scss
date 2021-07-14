@@ -1,15 +1,15 @@
-
-
 body {
   font-family: 'Encode Sans SC', sans-serif;
+  margin-bottom: 40px;
 }
 
 .footer {
+  position: fixed;
   margin-top: 10px;
   padding-top: 10px;
   bottom: 0;
   width: 100%;
-  height: 70px;
+  height: 40px;
   background-color: cadetblue;
   text-align: center;
   color: white;
