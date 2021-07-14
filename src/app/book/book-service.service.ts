@@ -32,4 +32,8 @@ export class BookService {
   updateBook(id: number, book: Book): Observable<Object> {
     return this.httpClient.put(`${this.url}/${id}`, book);
   }
+  
+  getBooksByTitle(title: string): Observable<Book>{
+    return this.httpClient.get<Book>(`${this.url}/title/${title}`);
+  }
 }

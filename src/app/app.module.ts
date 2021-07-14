@@ -8,6 +8,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { BookListComponent } from './book-list/book-list.component';
 import { CreateBookComponent } from './create-book/create-book.component';
 import { UpdateBookComponent } from './update-book/update-book.component';
+import { SearchBookComponent } from './search-book/search-book.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { UpdateBookComponent } from './update-book/update-book.component';
     BookListComponent,
     CreateBookComponent,
     UpdateBookComponent,
+    SearchBookComponent,
   ],
   imports: [
     BrowserModule,

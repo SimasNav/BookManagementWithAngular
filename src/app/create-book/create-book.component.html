@@ -1,20 +1,20 @@
-<div class="col-md-6 offset-md-3">
+<div class="col-md-6">
     <h3>Create Book</h3>
     <form (ngSubmit)="onSubmit()">
 
         <div class="form-group">
             <label>Book Title</label>
-            <input type="text" class="form-control" id="title" [(ngModel)]="book.title" name="title">
+            <input type="text" class="form-control" id="title" [(ngModel)]="book.title" name="title" required>
         </div>
 
         <div class="form-group">
             <label>Book Price</label>
-            <input type="text" class="form-control" id="price" [(ngModel)]="book.price" name="price">
+            <input type="number" class="form-control" id="price" [(ngModel)]="book.price" name="price" required>
         </div>
 
         <div class="form-group">
             <label>Book Pages</label>
-            <input type="text" class="form-control" id="pages" [(ngModel)]="book.pages" name="pages">
+            <input type="number" class="form-control" id="pages" [(ngModel)]="book.pages" name="pages" required>
         </div>
 
         <button class="btn btn-success" type="submit">Submit</button>
